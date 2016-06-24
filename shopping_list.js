@@ -13,13 +13,13 @@ ShoppingList.prototype.addItem = function(item){
   }
 };
 
-ShoppingList.prototype.total = function(){
-  return this.contents.reduce(function(prev,curr){
+ShoppingList.prototype.total = function() {
+  return this.contents.reduce(function(prev,curr) {
     return prev + curr.price;
-  },0);
-};
+  },0)
+}
 
-ShoppingList.prototype.swap = function(item1, item2){
+ShoppingList.prototype.swap = function(item1, item2) {
   this.contents[this.contents.indexOf(item1)] = item2;
 }
 
